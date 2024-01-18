@@ -19,4 +19,6 @@ button {
     border-radius: 20px;
     background-color: brown;
     color: beige;
+    align-self: center;
+    padding: 10px;
 }
