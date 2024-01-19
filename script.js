@@ -23,8 +23,8 @@ function guessNumb() {
         }
     }
 
-    if attempts === 0 {
-        result.innerHTML = "GAME OVER";
+    if (attempts === 0) {
+        document.getElementById('gameOn').innerHTML = "GAME OVER";
         break;
     }
 }
