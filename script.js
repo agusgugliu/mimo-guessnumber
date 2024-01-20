@@ -2,29 +2,21 @@ let randomNum = Math.floor(Math.random() * 100) + 1;
 let attempts = 5;
 
 function guessNumb() {
-    while (attempts>0) {
-        let numGuess = document.getElementById("guess").value;
-        const result = document.getElementById("resultStr");
+    const inputNumber = document.getElementById('guess');
+    const feedbackElement = document.getElementById('resultStr');
+    const guess = inputNumber.value;
 
-        if (numGuess === randomNum) {
-            result.innerHTML = "CORRECT";
-            result.style.color = "green";
-            break;
-        } else if (numGuess < randomNum) {
-            result.innerHTML = "TOO LOW";
-            result.style.color = "red";
-            attempts--;
-            break;
-        } else {
-            result.innerHTML = "TOO HIGH";
-            result.style.color = "red";
-            attempts--;
-            break;
-        }
-    }
-
-    if (attempts === 0) {
-        document.getElementById('gameOn').innerHTML = "GAME OVER";
+    if (guess === randomNum) {
+        feedbackElement.innerHTML = "CONGRATULATIONS";
+        feedbackElement.style.color = "gold";
+        break;
+    } else if (guess < randomNum) {
+        feedbackElement.innerHTML = "TOO LOW!";
+        feedbackElement.style.color = "red";
+        break;
+    } else {
+        feedbackElement.innerHTML = "TOO HIGH!";
+        feedbackElement.style.color = "orange";
         break;
     }
 }
