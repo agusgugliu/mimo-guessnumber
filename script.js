@@ -1,22 +1,17 @@
-let randomNum = Math.floor(Math.random() * 100) + 1;
-let attempts = 5;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-function guessNumb() {
-    const inputNumber = document.getElementById('guess');
-    const feedbackElement = document.getElementById('resultStr');
-    const guess = inputNumber.value;
-
-    if (guess === randomNum) {
-        feedbackElement.innerHTML = "CONGRATULATIONS";
-        feedbackElement.style.color = "gold";
-        break;
-    } else if (guess < randomNum) {
-        feedbackElement.innerHTML = "TOO LOW!";
-        feedbackElement.style.color = "red";
-        break;
-    } else {
-        feedbackElement.innerHTML = "TOO HIGH!";
-        feedbackElement.style.color = "orange";
-        break;
-    }
+function checkGuess() {
+  const inputElement = document.getElementById("guess");
+  const feedbackElement = document.getElementById("feedback");
+  const guess = inputElement.value;
+  if (guess == randomNumber) {
+    feedbackElement.innerHTML = "Congratulations!";
+    feedbackElement.style.color = "green";
+  } else if (guess < randomNumber) {
+    feedbackElement.innerHTML = "Too low! Try again.";
+    feedbackElement.style.color = "red";
+  } else {
+    feedbackElement.innerHTML = "Too high! Try again.";
+    feedbackElement.style.color = "red";
+  }
 }

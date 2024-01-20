@@ -1,22 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Guess Number</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="guessNumber">
-            <h1>Number Guesser</h1>
-            <h2>Guess The Number Between 1 and 100.</h2>
-            <input id="guess" type="number" placeholder="Enter Number:">
-            <br><br><br>
-            <button onclick="guessNumb()">Guess</button>
-            <br>
-            <button>Reset</button>
-            <p id="resultStr"></p>
-            <p id="gameOn"></p>
-        </div>
-
-        <script src="script.js"></script>
-    </body>
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guessing Game</h1>
+      <p>Guess a number between 1 and 100</p>
+      <input type="number" id="guess">
+      <button onclick="checkGuess()">Submit Guess</button>
+      <p id="feedback"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
