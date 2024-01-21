@@ -19,10 +19,18 @@ function checkGuess() {
             
             attempts--;
             
-            feedbackMessage.innerHTML = "TOO LOW.";
-            feedbackMessage.style.color = "#A84A54";
+            if (attempts === 0) {
+                feedbackMessage.innerHTML = "G A M E   O V E R";
+                feedbackMessage.style.color = "#A84A54";
 
-            feedbackAttempts.innerHTML = "Attempts Remaining: " + attempts;
+                feedbackAttempts.innerHTML = "The correct number was: " + randomNumber;
+            } else {
+
+                feedbackMessage.innerHTML = "TOO LOW.";
+                feedbackMessage.style.color = "#A84A54";
+
+                feedbackAttempts.innerHTML = "Attempts Remaining: " + attempts;
+            }
             
             break;
 
@@ -30,11 +38,18 @@ function checkGuess() {
             
             attempts--;
             
-            feedbackMessage.innerHTML = "TOO HIGH.";
-            feedbackMessage.style.color = "#A84A54";
+            if (attempts === 0) {
+                feedbackMessage.innerHTML = "G A M E   O V E R";
+                feedbackMessage.style.color = "#A84A54";
 
-            feedbackAttempts.innerHTML = "Attempts Remaining: " + attempts;
+                feedbackAttempts.innerHTML = "The correct number was: " + randomNumber;
+            } else {
 
+                feedbackMessage.innerHTML = "TOO HIGH.";
+                feedbackMessage.style.color = "#A84A54";
+
+                feedbackAttempts.innerHTML = "Attempts Remaining: " + attempts;
+            }
             break;
 
         }
