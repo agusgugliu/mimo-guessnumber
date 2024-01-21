@@ -11,15 +11,15 @@ function checkGuess() {
             feedbackElement.style.color = "green";
             break;
         } else if (guess < randomNumber) {
-            feedbackElement.innerHTML = "Too low! Try again.";
+            attempts--;
+            feedbackElement.innerHTML = "TOO LOW... Attempts Remaining: " + attempts;
             feedbackElement.style.color = "red";
             break;
-            attempts--;
         } else {
-            feedbackElement.innerHTML = "Too high! Try again.";
+            attempts--;
+            feedbackElement.innerHTML = "TOO HIGH... Attempts Remaining: " + attempts;
             feedbackElement.style.color = "red";
             break;
-            attempts--;
         }
     }
 
