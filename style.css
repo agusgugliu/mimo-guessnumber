@@ -8,7 +8,7 @@ h1 {
 }
 
 .container {
-    padding: 10px;
+    padding: 10%;
     background-color: #97C2DC;
     border-radius: 25px;
 }
@@ -20,5 +20,5 @@ button {
 
 input {
     width: 50%;
-    
+
 }
