@@ -3,28 +3,24 @@ let attempts = 5;
 
 function checkGuess() {
     while (attempts >= 0) {
-        if (attempts === 0) {
-            feedbackElement.innerHTML = "GAME OVER";
+        const inputElement = document.getElementById("guess");
+        const feedbackElement = document.getElementById("feedback");
+        const guess = inputElement.value;
+        
+        if (guess == randomNumber) {
+            feedbackElement.innerHTML = "CONGRATULATIONS! The number was\t" + randomNumber;
+            feedbackElement.style.color = "green";
+            break;
+        } else if (guess < randomNumber) {
+            attempts--;
+            feedbackElement.innerHTML = "TOO LOW!\nAttempts Remaining:\t" + attempts;
+            feedbackElement.style.color = "red";
+            break;
         } else {
-            const inputElement = document.getElementById("guess");
-            const feedbackElement = document.getElementById("feedback");
-            const guess = inputElement.value;
-            if (guess == randomNumber) {
-                feedbackElement.innerHTML = "Congratulations!";
-                feedbackElement.style.color = "green";
-                break;
-            } else if (guess < randomNumber) {
-                attempts--;
-                feedbackElement.innerHTML = "TOO LOW... Attempts Remaining: " + attempts;
-                feedbackElement.style.color = "red";
-                break;
-            } else {
-                attempts--;
-                feedbackElement.innerHTML = "TOO HIGH... Attempts Remaining: " + attempts;
-                feedbackElement.style.color = "red";
-                break;
-            }
+            attempts--;
+            feedbackElement.innerHTML = "TOO HIGH!\nAttempts Remaining:\t" + attempts;
+            feedbackElement.style.color = "orange";
+            break;
         }
     }
-    
 }
