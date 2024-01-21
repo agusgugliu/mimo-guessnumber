@@ -3,7 +3,13 @@ body {
     color: #0E2246;   
 }
 
+h1 {
+    color: #0E2246;
+    text-align: center;
+}
+
 .container {
     background-color: #0E2246;
-    
+
 }
+
