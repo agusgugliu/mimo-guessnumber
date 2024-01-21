@@ -5,7 +5,6 @@ body {
 
 h1 {
     color: #0E2246;
-    text-align: center;
 }
 
 .container {
@@ -13,3 +12,10 @@ h1 {
 
 }
 
+button {
+
+}
+
+input {
+    width: 50%;
+}
