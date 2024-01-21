@@ -39,4 +39,14 @@ function checkGuess() {
 
         }
     }
+
+    while (attempts === 0) {
+        const feedbackMessage = document.getElementById("fdbMessage");
+        const feedbackAttempts = document.getElementById("fdbAttempts");
+
+        feedbackMessage.innerHTML = "G A M E   O V E R";
+        feedbackMessage.style.color = "#A84A54";
+
+        feedbackAttempts.innerHTML = "The correct number was: " + randomNumber;
+    }
 }
