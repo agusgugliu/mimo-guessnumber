@@ -1,21 +1,24 @@
 body {
-    background-color: #97C2DC;
+    background-color: #0E2246;
     color: #0E2246;   
 }
 
 h1 {
-    color: #0E2246;
+    color: whitesmoke;
 }
 
 .container {
+    padding: 10px;
     background-color: #97C2DC;
-
+    border-radius: 25px;
 }
 
 button {
-
+    padding: 5px;
+    border-radius: 10px;
 }
 
 input {
     width: 50%;
+    
 }
