@@ -17,6 +17,9 @@ h2 {
 
 
 .container {
+    text-align: center;
+    width: 50%;
+    margin: 5px;
     padding: 15px;
     background-color: #97C2DC;
     border-radius: 25px;
