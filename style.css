@@ -1,13 +1,18 @@
 body {
     background-color: #0E2246;
     color: #0E2246;   
+    font-family: 'Calibri';
 }
 
 h1 {
     color: whitesmoke;
+    border-radius: 20px;
+    border-color: #0E2246;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h2 {
-    color: lightgrey;
+    color: gray;
 }
 
 
