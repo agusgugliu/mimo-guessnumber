@@ -12,7 +12,7 @@ h2 {
 
 
 .container {
-    padding: 25%;
+    padding: 15px;
     background-color: #97C2DC;
     border-radius: 25px;
 }
@@ -24,6 +24,6 @@ button {
 
 input {
     padding: 5px;
-    width: 50%;
+    width: 20px;
 
 }
